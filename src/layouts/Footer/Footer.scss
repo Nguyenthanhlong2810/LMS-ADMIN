@@ -1,0 +1,53 @@
+.footer {
+}
+.container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-logo {
+  margin-bottom: 33px;
+  cursor: pointer;
+}
+.footer-item {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  padding-left: 62px;
+  span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+  a {
+    padding-bottom: 11px;
+    cursor: pointer;
+  }
+}
+.social-logo {
+  margin-top: 50px;
+  border-top: 1px solid #3f90f6;
+  border-bottom: 1px solid #3f90f6;
+  display: flex;
+  padding-left: 35%;
+  padding-right: 35%;
+  padding-top: 30px;
+  padding-bottom: 33px;
+  justify-content: space-evenly;
+  svg {
+    width: 24px;
+    cursor: pointer;
+  }
+}
+.license-text {
+  // font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

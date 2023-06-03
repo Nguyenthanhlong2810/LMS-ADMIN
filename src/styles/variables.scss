@@ -1,0 +1,21 @@
+// define global variables
+$white: #fff;
+$black: #000;
+$primary-color: #1FBDF8;
+
+$secondary-color: #55C763;
+
+$accent-color-light: #e1f6f7;
+$warning-color: #faad14; // warning state color
+$error-color: #FF647C;
+
+$border-color: #ebeded;
+
+$sm-phone: '<=phone';
+$phone: '>phone', '<=tablet';
+$tablet: '<=tablet';
+
+$tablet-bigger: '>tablet', '<desktop';
+$sm-desktop: '<desktop';
+$desktop: '>desktop', '<LgDesktop';
+

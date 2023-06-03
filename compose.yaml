@@ -1,0 +1,25 @@
+services:
+  fe-admin:
+    build: .
+    volumes:
+        - 'db-fe-admin:/data/db'
+    ports:
+      - '3000:3000'
+    env_file: .env
+    networks:
+      network:
+        ipv4_address: '${NETWORK_PREFIX}.34'
+    container_name: fe-admin
+    hostname: fe-admin
+    tty: true
+networks:
+    network:
+        driver: bridge
+        ipam:
+            driver: default
+            config:
+                -   subnet:  ${NETWORK_PREFIX}.0/24
+                    gateway: ${NETWORK_PREFIX}.1
+
+volumes:
+    db-fe-admin:

@@ -1,0 +1,28 @@
+services:
+  fe-admin-uat:
+    build: .
+    volumes:
+        - 'db-fe-admin-uat:/data/dbuat'
+    env_file : .env.staging
+    ports:
+      - '3002:3002'
+    networks:
+      network:
+        ipv4_address: '${NETWORK_PREFIX}.36'
+    container_name: fe-admin-uat
+    hostname: fe-admin-uat
+    tty: true
+    environment:
+      - REACT_APP_ENDPOINT= http://192.168.72.35:8089
+networks:
+    network:
+        driver: bridge
+        ipam:
+            driver: default
+            config:
+                -   subnet:  ${NETWORK_PREFIX}.0/24
+                    gateway: ${NETWORK_PREFIX}.1
+
+volumes:
+    db-fe-admin-uat:
+

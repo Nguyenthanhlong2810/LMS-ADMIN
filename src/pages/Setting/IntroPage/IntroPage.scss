@@ -1,0 +1,18 @@
+.intro-page {
+  input[type='file'] {
+    display: block;
+    position: absolute;
+    clip: rect(0px, 0px, 0px, 0px);
+    padding: 9px;
+    border: solid 1px #173955;
+    outline: 0;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left 25,
+      from(#ffffff),
+      color-stop(4%, #aacce8),
+      to(#ffffff)
+    );
+  }
+}

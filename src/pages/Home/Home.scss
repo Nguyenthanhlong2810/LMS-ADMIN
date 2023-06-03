@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  padding: 1rem 1.6rem;
+  align-items: flex-start;
+  .content {
+    flex: 1;
+    padding-right: 1rem;
+    // font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 1.6;
+    .title {
+      font-size: 40px;
+    }
+    .detail {
+      margin: 24px 0;
+    }
+  }
+  .image {
+    flex: 1;
+  }
+}

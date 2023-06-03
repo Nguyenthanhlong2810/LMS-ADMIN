@@ -1,0 +1,42 @@
+.button-group {
+  margin-bottom: 1rem;
+}
+
+.letter-count {
+  text-align: end;
+  // font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 180%;
+}
+.faq-question-form {
+  .upload-file {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 1rem;
+    .label-upload {
+      flex-direction: row-reverse;
+      padding-right: 2rem;
+      padding-left: 0rem;
+      div {
+        color: #000 !important;
+      }
+    }
+    .file-name {
+      word-break: break-all;
+      line-height: 1.3;
+    }
+    p.notification {
+      width: 55%;
+      margin: auto 10px;
+      // font-family: 'Montserrat';
+      color: #a9a9a9;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 200%;
+    }
+  }
+}

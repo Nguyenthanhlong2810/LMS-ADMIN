@@ -1,0 +1,22 @@
+.custom-row-status {
+  padding: 2px 4px;
+  gap: 4px;
+  background: #e2eafd;
+  border-radius: 4px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  span {
+    color: #ff647c;
+    &.ACTIVE,
+    &.APPLY {
+      color: #55c763;
+    }
+    &.DRAFT {
+      color: #0c08f3;
+    }
+  }
+}
